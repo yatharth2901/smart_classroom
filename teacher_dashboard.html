@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ session['username'] }} (Teacher)</h1>
+        <nav>
+            <ul>
+                <li><a href="/announcements">Announcements</a></li>
+                <li><a href="/recordings">Recordings</a></li>
+                <li><a href="/mentors">Manage Mentors</a></li>
+                <li><a href="/profile">View Profile</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h2>Dashboard Features</h2>
+            <button><a href="/attendance">View Attendance</a></button>
+            <button><a href="/live-classes">Live Classes</a></button>
+        </div>
+        <div>
+            <h3>Upcoming Events</h3>
+            <div id="calendar">
+                <!-- Placeholder for calendar feature -->
+                <p>No upcoming events currently.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

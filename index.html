@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Welcome to Smart Classroom</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Announcements</h5>
+                        <p class="card-text">View or post important announcements.</p>
+                        <a href="/announcements" class="btn btn-primary">Go to Announcements</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recordings</h5>
+                        <p class="card-text">Access recorded classes anytime.</p>
+                        <a href="/recordings" class="btn btn-primary">View Recordings</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Mentor Connect</h5>
+                        <p class="card-text">Reach out to your mentors for guidance.</p>
+                        <a href="/mentor_connect" class="btn btn-primary">Connect Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
